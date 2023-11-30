@@ -1,7 +1,11 @@
+@font-face {
+  font-family: "Khmer_Mool1";
+  src: url("./font/KHMMOOL1.ttf");
+}
 :root {
   --width: 14.85;
   --height: 21;
-  --kh-font: "Khmer Mool1";
+  --kh-font: "Khmer_Mool1";
 }
 *,
 ::after,
