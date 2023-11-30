@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>បង្កើតក្របសៀវភៅ</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/2417/2417818.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <form class="input-form">
+        <div class="input-header">
+          <h1>កម្មវិធីធ្វើក្របសៀវភៅសរសេរ</h1>
+          <img
+            draggable="false"
+            src="https://cdn-icons-png.flaticon.com/512/2417/2417818.png"
+            alt="making-cover-icon"
+          />
+        </div>
+        <div class="input-group">
+          <label for="school">សាលារៀន </label>
+          <input
+            type="text"
+            placeholder="បញ្ចូលឈ្មោះសាលា (ឧ. វិទ្យាល័យកំពង់ស្ពឺ)"
+            name="school"
+            id="school"
+          />
+        </div>
+        <div class="input-group">
+          <label for="grade">ថ្នាក់ </label>
+          <input
+            type="text"
+            placeholder="បញ្ចូលឈ្មោះថ្នាក់ (ឧ. 9E)"
+            name="grade"
+            id="grade"
+          />
+        </div>
+        <div class="input-group">
+          <label for="book">មុខវិជ្ជា </label>
+          <textarea
+            name="book"
+            placeholder="បញ្ចូលមុខវិជ្ជា (ឧ. ភាសាខ្មែរ,គណិតវិទ្យា,រូបវិទ្យា)"
+            id="book"
+          ></textarea>
+        </div>
+        <div class="input-group">
+          <label for="name">ឈ្មោះ </label>
+          <input
+            type="text"
+            placeholder="បញ្ចូលឈ្មោះផ្ទាល់ខ្លួន (ឧ. ស៊ឺ ដេវីត)"
+            id="name"
+            name="name"
+          />
+        </div>
+        <div class="input-group">
+          <label for="year">ឆ្នាំសិក្សា </label>
+          <input
+            type="text"
+            placeholder="បញ្ចូលឆ្នាំសិក្សា (ឧ. ២០២២ - ២០២៣)"
+            id="year"
+            name="year"
+          />
+        </div>
+        <div class="input-group">
+          <label for="border-type">ប្រភេទស៊ុម </label>
+          <select name="border-type" id="border-type">
+            <option value="frame-1.svg">ប្រភេទ 1</option>
+            <option value="frame-2.png">ប្រភេទ 2</option>
+            <option value="frame-3.png">ប្រភេទ 3</option>
+            <option value="frame-4.png">ប្រភេទ 4</option>
+            <option value="frame-5.png">ប្រភេទ 5</option>
+            <option value="frame-6.png">ប្រភេទ 6</option>
+            <option value="frame-7.png">ប្រភេទ 7</option>
+            <option value="frame-8.png">ប្រភេទ 8</option>
+            <option value="frame-9.png">ប្រភេទ 9</option>
+            <option value="frame-10.png">ប្រភេទ 10</option>
+          </select>
+        </div>
+        <div class="button-group">
+          <button class="btn btn-make" type="button">បង្កើត</button>
+          <button class="btn btn-clear" type="button">សម្អាត</button>
+          <button class="btn btn-print" type="button">បោះពុម្ព</button>
+        </div>
+      </form>
+      <div class="cover-container"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
