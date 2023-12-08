@@ -1,11 +1,8 @@
-@font-face {
-  font-family: "Khmer_Mool1";
-  src: url("./font/KHMMOOL1.ttf");
-}
 :root {
   --width: 14.85;
   --height: 21;
-  --kh-font: "Khmer_Mool1";
+  --kh-font: "Khmer Mool1";
+  --width-size: 535px;
 }
 *,
 ::after,
@@ -58,12 +55,12 @@ video {
   align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1em;
+  gap: 0.5em;
   margin-bottom: 2em;
 }
 
 .cover {
-  width: 400px;
+  width: var(--width-size);
   aspect-ratio: var(--width) / var(--height);
   position: relative;
   display: flex;
@@ -81,7 +78,7 @@ video {
   break-inside: avoid;
   white-space: nowrap;
   text-align: center;
-  font-size: clamp(0.5rem, 1.8rem, 2.2rem);
+  font-size: clamp(0.9rem, 2.45rem, 2.6rem);
   z-index: 2;
   color: black;
 }
@@ -206,4 +203,6 @@ video {
 
 @page {
   size: A4 landscape;
+  margin: 0;
+  margin-top: 0.5cm;
 }
